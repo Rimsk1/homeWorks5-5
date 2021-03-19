@@ -56,7 +56,7 @@ public class homeWork2 {
                 break;
             case 9:
                 System.out.println(num1 - num2);
-            default:("введите операнды и оператор");
+
 
         }
 
