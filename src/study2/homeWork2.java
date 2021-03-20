@@ -57,7 +57,7 @@ public class homeWork2 {
                 break;
             case 9:
                 System.out.println(num1 - num2);
-
+            break;
 
         }
         /*3. Задача на цикл while
@@ -76,14 +76,35 @@ public class homeWork2 {
 если введен 0, выводит "выход из программы" (программа завершает работу)*/
 
 
-
-
-
+        Scanner scan = new Scanner(System.in);
+        String playAgain = "";
+        do {
+            int theNumber = (int) (Math.random() * 10);
+            int guess = 0;
+            while (guess != theNumber) {
+                System.out.println("угадайте число от 1 до 10");
+                guess = scan.nextInt();
+                if (guess > theNumber)
+                    System.out.println(guess + " попробуйте ввести число поменьше");
+                else if (guess < theNumber)
+                    System.out.println(guess + " попробуйте ввести число побольше");
+                else
+                    System.out.println(guess + " вы победили!");
+            } // End of while loop for guessing
+            System.out.println("хотите сыграть еще? (y/n)?");
+            playAgain = scan.next();
+        } while (playAgain.equalsIgnoreCase("y"));
+        System.out.println("спасибо за игру!");
+        scan.close();
     }
-
-
-
 }
+
+
+
+
+
+
+
 
 
 
