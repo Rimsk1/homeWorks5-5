@@ -60,7 +60,7 @@ public class homeWork2 {
                 break;
             case 9:
                 System.out.println(num1 - num2);
-            break;
+                break;
             default:
                 System.out.println("вы не ввели математический оператор 3/5/7/9");
 
@@ -73,18 +73,20 @@ public class homeWork2 {
 наоборот.*/
 
         Scanner in3 = new Scanner(System.in);
-        System.out.println( "укажите количество тарелок");
-       int plate =in3.nextInt();
-       Scanner in4 = new Scanner (System.in);
+        System.out.println("укажите количество тарелок");
+        int plate = in3.nextInt();
+        Scanner in4 = new Scanner(System.in);
         System.out.println("укажите количество моющего средства");
         double fairy = in4.nextDouble();
-        while (fairy >= 0  && plate >= 0) {
+        while (fairy >= 0 && plate >= 0) {
 
-         if (fairy == 0){ System.out.println("у вас осталось  " + plate + "грязных тарелок");
+            if (fairy == 0) {
+                System.out.println("у вас осталось  " + plate + "грязных тарелок");
 
-         } else if (plate == 0) { System.out.println("все тарелки чистые. моющего средства осталось " + fairy );
+            } else if (plate == 0) {
+                System.out.println("все тарелки чистые. моющего средства осталось " + fairy);
 
-            }else if (plate == 0 && fairy == 0) System.out.println("все тарелки вымыты, моющее средство кончилось");
+            } else if (plate == 0 && fairy == 0) System.out.println("все тарелки вымыты, моющее средство кончилось");
             plate--;
             fairy = fairy - 0.5;
         }
@@ -113,14 +115,22 @@ public class homeWork2 {
                     System.out.println(guess + " попробуйте ввести число побольше");
                 else
                     System.out.println(guess + " вы победили!");
-            } // End of while loop for guessing
-            System.out.println("хотите сыграть еще? (y/n)?");
-            playAgain = scan.next();
-        } while (playAgain.equalsIgnoreCase("y"));
-        System.out.println("спасибо за игру!");
-        scan.close();
+            } System.out.println("хотите сыграть еще? (y/n)?");
+                playAgain = scan.next();
+            } while (playAgain.equalsIgnoreCase("y")) ;
+            System.out.println("спасибо за игру!");
+            scan.close();
+        }       /* 5. Задача на Math.random() и if
+Написать код, который будет проверять попало ли случайно сгенерированное целое число из отрезка [10;500]
+в интервал (25;200) и выводить результат в консоль.
+Примеры работы программы:
+Число 345 не содержится в интервале (25;200)
+Число 110 содержится в интервале (25;200) */
     }
-}
+
+
+
+
 
 
 
