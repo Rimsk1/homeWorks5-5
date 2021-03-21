@@ -1,5 +1,8 @@
 package study2;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class homeWork2 {
@@ -58,6 +61,8 @@ public class homeWork2 {
             case 9:
                 System.out.println(num1 - num2);
             break;
+            default:
+                System.out.println("вы не ввели математический оператор 3/5/7/9");
 
         }
         /*3. Задача на цикл while
@@ -66,6 +71,24 @@ public class homeWork2 {
 В цикле выводить сколько моющего средства осталось после мытья каждой тарелки.
 В конце вывести сколько тарелок осталось, когда моющее средство закончилось или
 наоборот.*/
+
+        Scanner in3 = new Scanner(System.in);
+        System.out.println( "укажите количество тарелок");
+       int plate =in3.nextInt();
+       Scanner in4 = new Scanner (System.in);
+        System.out.println("укажите количество моющего средства");
+        double fairy = in4.nextDouble();
+        while (fairy >= 0  && plate >= 0) {
+
+         if (fairy == 0){ System.out.println("у вас осталось  " + plate + "грязных тарелок");
+
+         } else if (plate == 0) { System.out.println("все тарелки чистые. моющего средства осталось " + fairy );
+
+            }else if (plate == 0 && fairy == 0) System.out.println("все тарелки вымыты, моющее средство кончилось");
+            plate--;
+            fairy = fairy - 0.5;
+        }
+
 
 /*4. Программа загадывает число в диапазоне [1;9]
 Пользователь вводит число с клавиатуры
