@@ -3,6 +3,7 @@ package study2;
 import jdk.swing.interop.SwingInterOpUtils;
 
 import java.sql.SQLOutput;
+import java.util.Random;
 import java.util.Scanner;
 
 public class homeWork2 {
@@ -89,6 +90,7 @@ public class homeWork2 {
             } else if (plate == 0 && fairy == 0) System.out.println("все тарелки вымыты, моющее средство кончилось");
             plate--;
             fairy = fairy - 0.5;
+
         }
 
 
@@ -115,18 +117,30 @@ public class homeWork2 {
                     System.out.println(guess + " попробуйте ввести число побольше");
                 else
                     System.out.println(guess + " вы победили!");
-            } System.out.println("хотите сыграть еще? (y/n)?");
-                playAgain = scan.next();
-            } while (playAgain.equalsIgnoreCase("y")) ;
-            System.out.println("спасибо за игру!");
-            scan.close();
-        }       /* 5. Задача на Math.random() и if
+            }
+            System.out.println("хотите сыграть еще? (y/n)?");
+            playAgain = scan.next();
+        } while (playAgain.equalsIgnoreCase("y"));
+        System.out.println("спасибо за игру!");
+        scan.close();
+            /* 5. Задача на Math.random() и if
 Написать код, который будет проверять попало ли случайно сгенерированное целое число из отрезка [10;500]
 в интервал (25;200) и выводить результат в консоль.
 Примеры работы программы:
 Число 345 не содержится в интервале (25;200)
 Число 110 содержится в интервале (25;200) */
+        int min2 = 10, max2 = 500;
+        int x = min2 + (int) (Math.random()* (max2-min2) + 1);
+        if ( x >= 25 ||  x <= 200) {
+            System.out.println("случайное число в диапазоне [25:200] " + x);
+
+        }
+
     }
+}
+
+
+
 
 
 
