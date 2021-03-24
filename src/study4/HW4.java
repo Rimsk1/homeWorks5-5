@@ -5,6 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 import java.util.Arrays;
 
 public class HW4 {
+
     public static void main(String[] args) {
         int arr[] = new int[]{2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
         System.out.println("Массив в исходном виде");

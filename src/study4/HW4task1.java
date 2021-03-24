@@ -9,7 +9,6 @@ public class HW4task1 {
         int imax = 0, imin = 0, swap;
         System.out.println("Исходный массив:");
         for (int i = 0; i < A.length; i++) {
-            //A[i] = random.nextInt() % 100;
             A[i] = (int) (Math.random()*498+2);
             System.out.print(A[i] + " ");
             if (A[i] < min) {
