@@ -66,5 +66,16 @@ public class Cat {
         this.catchedMouses = catchedMouses;
 
     }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", speed=" + speed +
+                ", weight=" + weight +
+                ", catchedMouses=" + catchedMouses +
+                '}';
+    }
 }
 
