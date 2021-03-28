@@ -30,7 +30,9 @@ public class Library {
         }
         System.out.println("Хранилище заполнено, выберите другое");
     }
-
+    public Library() {
+        this.books = new Book[20];
+    }
 
     @Override
     public String toString() {
