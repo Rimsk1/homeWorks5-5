@@ -34,8 +34,44 @@ public class MessageTsk {
     public static void countEachCode(List<Message> messageList) {
         // TODO: Подсчитать количество сообщений для каждого кода сообщения
         //  Ответ в консоль
-    }
 
+        int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, h = 90, i = 0, j = 0;
+        for (Message message:messageList
+             ) {
+            if(message.getCode()==0){
+                a+=1;
+            }
+            if(message.getCode()==1){
+                b+=1;
+            }
+            if(message.getCode()==2){
+                c+=1;
+            }
+            if(message.getCode()==3){
+                d+=1;
+            }
+            if(message.getCode()==4){
+                e+=1;
+            }
+            if(message.getCode()==5){
+                f+=1;
+            }
+            if(message.getCode()==6){
+                g+=1;
+            }
+            if(message.getCode()==7){
+                h+=1;
+            }
+            if(message.getCode()==8){
+                i+=1;
+            }
+            if(message.getCode()==9){
+                j+=1;
+            }
+        }
+        System.out.println("0" + a);
+        System.out.println("9" + j);
+    }
     public static void uniqueMessageCount(List<Message> messageList) {
         // TODO: Подсчитать количество уникальных сообщений
         //  Ответ в консоль
