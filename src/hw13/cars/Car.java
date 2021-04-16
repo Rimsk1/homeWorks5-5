@@ -54,7 +54,7 @@ public class Car {
         }
     }
 
-    public static class BrandComporator implements Comparator<Car> {
+    public static class BrandComparator implements Comparator<Car> {
 
         @Override
         public int compare(Car o1, Car o2) {

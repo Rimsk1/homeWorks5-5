@@ -12,7 +12,7 @@ public class CarCompairing {
             Car yellowMazda = new Car("yellow", "mazda", 3000);
             Car greenMazda = new Car("green", "mazda", 3000);
             Comparator<Car> comparator = new Car.PriceComparator().thenComparing(new Car.ColorComparator())
-                    .thenComparing(new Car.BrandComporator());
+                    .thenComparing(new Car.BrandComparator());
             TreeSet<Car> carTreeSet = new TreeSet<>(comparator);
 
             System.out.println(carTreeSet);
