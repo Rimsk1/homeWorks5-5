@@ -5,14 +5,12 @@ public class Cat {
     private String color;
     private int speed;
     private double weight;
-    private Mouse catchedMouses;
 
-    public Cat(String name, String color, int speed, double weight, Mouse catchedMouses) {
+    public Cat(String name, String color, int speed, double weight) {
         this.name = name;
         this.color = color;
         this.speed = speed;
         this.weight = weight;
-        this.catchedMouses = catchedMouses;
     }
 
     public String getName() {
@@ -31,10 +29,6 @@ public class Cat {
         return weight;
     }
 
-    public Mouse getCatchedMouses() {
-        return catchedMouses;
-    }
-
     public void setName(String name) {
         if (name == null || name.length() < 3) {
             throw new IllegalArgumentException("name to short");
@@ -42,16 +36,13 @@ public class Cat {
         this.name = name;
     }
 
+
     public void setColor(String color) {
         if (color == null || color.length() < 5) {
             throw new IllegalArgumentException("color to short");
-            this.color = color;
         }
+        this.color = color;
 
-
-        public void setCatchedMouses (Mouse catchedMouses){
-            this.catchedMouses = catchedMouses;
-        }
     }
 
     public void setSpeed(int speed) {
@@ -62,10 +53,6 @@ public class Cat {
         this.weight = weight;
     }
 
-    public void setCatchedMouses(Mouse catchedMouses) {
-        this.catchedMouses = catchedMouses;
-
-    }
 
     @Override
     public String toString() {
@@ -74,7 +61,6 @@ public class Cat {
                 ", color='" + color + '\'' +
                 ", speed=" + speed +
                 ", weight=" + weight +
-                ", catchedMouses=" + catchedMouses +
                 '}';
     }
 }

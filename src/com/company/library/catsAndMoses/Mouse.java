@@ -2,7 +2,7 @@ package com.company.library.catsAndMoses;
 
 public class Mouse {
     private int  speed;
-    private int numMouse;
+    private String name;
 
     public void setSpeed(int speed) {
         if (speed<1){
@@ -15,20 +15,12 @@ public class Mouse {
         return speed;
     }
 
-    public int getNumMouse() {
-        return numMouse;
+    public String getName() {
+        return name;
     }
 
     public Mouse(String name, int speed) {
         this.speed = speed;
-        this.numMouse = numMouse;
-    }
-
-    @Override
-    public String toString() {
-        return "Mouse{" +
-                "speed=" + speed +
-                ", numMouse=" + numMouse +
-                '}';
+        this.name = this.name;
     }
 }
