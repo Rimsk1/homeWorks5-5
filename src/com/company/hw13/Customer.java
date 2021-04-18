@@ -1,6 +1,8 @@
 package com.company.hw13;
 
 
+import java.util.Map;
+
 public class Customer {
     private String name;
     private String uuid;

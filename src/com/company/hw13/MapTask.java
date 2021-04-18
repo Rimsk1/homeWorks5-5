@@ -67,10 +67,11 @@ public class MapTask {
         int from = 17;
         int to = 60;
 
+
         for (Map.Entry<String, Customer> customerEntry : customerMap.entrySet()) {
             if (customerEntry.getValue().getAge() < from && customerEntry.getValue().getAge() > to) {
-                ageMap.put(customerEntry.getValue());
-                ageMap.entrySet().add(customerEntry.setValue());
+                //ageMap.entrySet(customerEntry);
+              //  ageMap.put(customerEntry.getKey(), customerEntry.getValue());
 
             }
             System.out.println(ageMap);
