@@ -24,6 +24,7 @@ public class MapTask {
 
             }
         }
+
         System.out.println(city + " " + loginsList);
 
 
@@ -69,13 +70,15 @@ public class MapTask {
 
 
         for (Map.Entry<String, Customer> customerEntry : customerMap.entrySet()) {
-            if (customerEntry.getValue().getAge() < from && customerEntry.getValue().getAge() > to) {
-                //ageMap.entrySet(customerEntry);
-              //  ageMap.put(customerEntry.getKey(), customerEntry.getValue());
+            if (customerEntry.getValue().getAge() > from && customerEntry.getValue().getAge() < to) {
+                //ageMap.entrySet(customerEntry.e);
+              ageMap.put(customerEntry.getKey(), customerEntry.getValue());
 
             }
-            System.out.println(ageMap);
+
+
         }
+        System.out.println(ageMap);
         // TODO:: Задания по тексту (text). На каждый пункт - минимум один метод:
         //  1. написать метод, принимающий на вход слово и возвращающий частоту
         //  встречаемости данного слова в тексте

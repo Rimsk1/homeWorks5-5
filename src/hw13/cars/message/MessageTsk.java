@@ -113,9 +113,9 @@ public class MessageTsk {
         //  Например, было: [{URGENT, 4}, {HIGH, 9}, {LOW, 3}, {HIGH, 9}]
         //  на выходе: [{URGENT, 4}, {HIGH, 9}, {LOW, 3}]
         Set<Message> uniqueMessages = new LinkedHashSet<>(messageList);
-//        messageList.stream().distinct().collect(Collectors.toList());
-//        messageList.stream().distinct().forEach(System.out::println);
-//        messageList.stream().distinct().map(Message::getPriority).collect(Collectors.toList());
+        messageList.stream().distinct().collect(Collectors.toList());
+        messageList.stream().distinct().forEach(System.out::println);
+        messageList.stream().distinct().map(Message::getPriority).collect(Collectors.toList());
 
         return  new ArrayList<>(uniqueMessages);
 
