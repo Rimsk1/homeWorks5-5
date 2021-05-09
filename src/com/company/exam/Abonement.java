@@ -124,6 +124,42 @@ abstract public class Abonement {
         return timeOff;
     }
 
+    public boolean isPool1() {
+        return pool1;
+    }
+
+    public boolean isGroup1() {
+        return group1;
+    }
+
+    public boolean isGym2() {
+        return gym2;
+    }
+
+    public boolean isPool2() {
+        return pool2;
+    }
+
+    public boolean isGroup2() {
+        return group2;
+    }
+
+    public boolean isGym3() {
+        return gym3;
+    }
+
+    public boolean isPool3() {
+        return pool3;
+    }
+
+    public boolean isGroup3() {
+        return group3;
+    }
+
+    public boolean isGym1() {
+        return gym1;
+    }
+
     @Override
     public String toString() {
         return "Abonement{" +

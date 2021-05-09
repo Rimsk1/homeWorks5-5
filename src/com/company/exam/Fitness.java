@@ -30,7 +30,26 @@ public class Fitness {
         return group;
     }
     private void  addFitness(Abonement subscriber, String zone){
+        switch (zone){
+//            делаем проверку на вхождение в часы приема и абонемента, свитч как раз неплохо подошел        }
+            case  "group":
+                if (subscriber.getRegOff().isAfter(LocalDateTime.now())){
+                    if (LocalTime.now().getHour()  > subscriber.getTimeIn().getHour() &&
+                            LocalTime.now().getHour() < subscriber.getTimeOff().getHour()){
+                        if (subscriber.isGroup1()){
+                            for(int i =0; i<20; i++){
+                                if(group[i] == null){
+                                    group[i] = subscriber;
+                                    subscriber.setGroup1(false);
+                                    subscriber.setGym1(false);
+                                    subscriber.setPool1(false);
+                                    subscriber.setGroup3(true);
+                                }
+                            }
+                        }
+                    }
+                }
+        }
 
-    }
 }
 
